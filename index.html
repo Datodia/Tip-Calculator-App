@@ -5,9 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
     <title>Tip Calculator</title>
 </head>
 <body>
-    <h1>hello world</h1>
+    <div class="container">
+        <div class="title"></div>
+
+        <div class="box">
+            <div class="left">
+                <div class="bill">
+                    <h1>Bill</h1>
+                    <div class="input">
+                        <img src="assets/dolar.svg" alt="">
+                        <input type="number" placeholder="0">
+                    </div>
+                </div>
+            
+            
+                <div class="tip">
+                    <h1>Select Tip %</h1>
+                    <div class="tips">
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                        <button>20%</button>
+                        <button>25%</button>
+                        <input type="number" placeholder="Custom">
+                    </div>
+                </div>
+
+                <div class="people">
+                    <h1>Number of People</h1>
+                    <div class="input">
+                        <img src="assets/people.svg" alt="">
+                        <input type="number" placeholder="0">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <div class="amount flex">
+                    <div class="text">
+                        <h1>Tip Amount</h1>
+                        <p> / preson</p>
+                    </div>
+                    <div class="price">
+                        <h1>$4.27</h1>
+                    </div>
+                </div>
+                <div class="amount flex">
+                    <div class="text">
+                        <h1>Total</h1>
+                        <p> / preson</p>
+                    </div>
+                    <div class="price">
+                        <h1>$30.17</h1>
+                    </div>
+                </div>
+                <button>RESET</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
