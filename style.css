@@ -12,6 +12,7 @@
     --lightgreen: #26C2AE;
     --gray: #5E7A7D;
     --light: #F3F9FA;
+    --red: #E17457;
 }
 
 .flex {
@@ -26,7 +27,6 @@ body {
 
 .container {
     width: 100%;
-
 }
 
 .container .title {
@@ -40,7 +40,6 @@ body {
 
 .container .box {
     margin: auto;
-    border: 2px solid red;
     width: 375px;
     background-color: var(--white);
     box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
@@ -74,6 +73,15 @@ body {
     font-weight: 700;
     background-color: var(--light);
     font-family: 'Space mono';
+}
+
+.container .box .left .people .ppl-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .box .left .people .ppl-text :last-child {
+    color: var(--red);
 }
 
 .container .box .left .tip .tips input {

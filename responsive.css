@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --green: #00474B;
+    --lightgreen: #26C2AE;
+    --gray: #5E7A7D;
+    --light: #F3F9FA;
+}
+
+@media screen and (min-width: 920px) {
+    .container .box {
+        width: 920px;
+    }
+
+    .container .box {
+        display: flex;
+    }
+
+    .container .box .right,
+    .container .box .left {
+        width: 379px;
+    }
+
+    .container .box .left {
+        margin-top: 45px;
+    }
+
+    .container .box .left .bill .input,
+    .container .box .left .people .input {
+        width: 379px;
+    }
+
+    .container .box .left .tip .tips button,
+    .container .box .left .tip .tips input {
+        width: 117px;
+    }
+
+    .container .box .left .bill .input,
+    .container .box .left .people .input {
+        margin-bottom: 40px;
+    }
+
+    .container .box .right button {
+        width: 333px;
+        margin-top: 70px;
+    }
+
+    .container .box .right .amount {
+        margin-top: 30px;
+        margin-bottom: 58px;
+    }
+
+    .container .title {
+        margin-bottom: 80px;
+        margin-top: 100px;
+    }
+}
