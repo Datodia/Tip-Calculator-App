@@ -45,11 +45,12 @@ body {
     box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
     border-radius: 25px;
     margin-bottom: 40px;
+    padding: 1px 0;
 }
 
 .container .box .left .bill .input,
 .container .box .left .people .input {
-    width: 311px;
+    width: 328px;
     height: 48px;
     background-color: var(--light);
     display: flex;
@@ -87,7 +88,7 @@ body {
 .container .box .left .tip .tips input {
     width: 148px;
     height: 48px;
-    padding-right: 10px;
+    padding-right: 16px;
     border-radius: 5px;
     margin-top: 16px;
 }
@@ -109,6 +110,10 @@ body {
     color: var(--white);
     font-family: "Space mono";
     font-size: 24px;
+}
+
+.container .box .left .tip .tips button.active {
+    background-color: var(--lightgreen);
 }
 
 .container .box .right,
