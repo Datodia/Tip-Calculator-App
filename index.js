@@ -10,7 +10,8 @@ const people = document.getElementById('people')
 const zero = document.getElementById('zero')
 const tip = document.getElementById('tip-amount')
 const total = document.getElementById('total')
-const buttons = document.querySelectorAll('.tip .tips button')
+const peopleDiv = document.getElementById('people-div')
+const billDiv = document.getElementById('bill-div')
 
 function calc(e) {
     let tip1 = (((bill.value * e) / 100) / people.value)
@@ -21,47 +22,46 @@ function calc(e) {
 function checkZero() {
     if (people.value == "" || people.value == 0) {
         zero.innerHTML = "Can't be zero"
+        peopleDiv.style.border = "2px solid red"
     } else {
         zero.innerHTML = ""
+        peopleDiv.style.border = "none"
     }
 }
 
+bill.addEventListener('focus', (e) => {
+    billDiv.style.border = "2px solid var(--lightgreen)"
+})
+bill.addEventListener('blur', (e) => {
+    billDiv.style.border = "none"
+})
 
-function color(btn) {
-    btn.style.backgroundColor = 'var(--lightgreen)'
-}
-
-// buttons.forEach((btn, id) => {
-//     btn.addEventListener('click', () => {
-//         checkZero()
-//         calc(id)
-//     })
-// })
+people.addEventListener('focus', (e) => {
+    peopleDiv.style.border = "2px solid var(--lightgreen)"
+})
+people.addEventListener('blur', (e) => {
+    peopleDiv.style.border = "none"
+})
 
 btn1.addEventListener('click', () => {
     checkZero()
     calc(5)
-    color(btn1)
 })
 btn2.addEventListener('click', () => {
     checkZero()
     calc(10)
-    color(btn2)
 })
 btn3.addEventListener('click', () => {
     checkZero()
     calc(15)
-    color(btn3)
 })
 btn4.addEventListener('click', () => {
     checkZero()
     calc(25)
-    color(btn4)
 })
 btn5.addEventListener('click', () => {
     checkZero()
     calc(50)
-    color(btn5)
 })
 custom.addEventListener('input', () => {
     checkZero()

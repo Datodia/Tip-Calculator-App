@@ -13,6 +13,7 @@
     --gray: #5E7A7D;
     --light: #F3F9FA;
     --red: #E17457;
+    --cyan: #9FE8DF;
 }
 
 .flex {
@@ -110,10 +111,22 @@ body {
     color: var(--white);
     font-family: "Space mono";
     font-size: 24px;
+    cursor: pointer;
 }
 
-.container .box .left .tip .tips button.active {
+.container .box .left .tip .tips button:hover,
+.container .box .right button:hover {
+    background-color: var(--cyan);
+    color: var(--green);
+}
+
+.container .box .left .tip .tips button:focus {
     background-color: var(--lightgreen);
+    color: var(--green);
+}
+
+#custom:focus {
+    border: 2px solid var(--lightgreen);
 }
 
 .container .box .right,
@@ -167,4 +180,5 @@ body {
     border-radius: 5px;
     font-size: 20px;
     font-family: 'Space Mono';
+    cursor: pointer;
 }
